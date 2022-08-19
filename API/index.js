@@ -47,7 +47,7 @@ Do this inside a new file called catfact.html
 
 2. Next create an API for a currency app
 https://api.coindesk.com/v1/bpi/currentprice.json
-Let the fetch function go to the API every 5 seconds, get a fact and append the important details to the html
+Let the fetch function go to the API every 5 seconds, get the currency exchange and append the important details to the html
 Do this inside a new file called currency.html
 
 */
