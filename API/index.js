@@ -26,10 +26,10 @@ fetch(itemUrl + "32494485" + ".json", options)
   .catch((err) => console.error(err));
 
 
-  
+
 // Assignment
 /*
 Make an app that goes to 
 https://catfact.ninja/fact
-Let the fetch it go to the API every 5 seconds, get a fact and append it to p tag on the html
+Let the fetch function go to the API every 5 seconds, get a fact and append it to p tag on the html
 */ 
