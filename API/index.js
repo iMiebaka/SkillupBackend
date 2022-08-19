@@ -20,7 +20,7 @@ const options = {
 //   This request get the first 500 request
 fetch(newStoriesUrl, options)
   .then((response) => response.json())
-  .then((response) => console.log())
+  .then((response) => {})
   .catch((err) => console.error(err));
 
 ("https://hacker-news.firebaseio.com/v0/item/32508668.json");
@@ -29,11 +29,11 @@ fetch(newStoriesUrl, options)
 fetch(itemUrl + "32508668" + ".json", options)
   .then((response) => response.json())
   .then((response) => {
-    title.innerHTML = response.title
-    by.innerHTML = response.by
-    type.innerHTML = response.type
-    url.href = response.url
-    url.innerHTML = response.url
+    title.innerHTML = response.title;
+    by.innerHTML = response.by;
+    type.innerHTML = response.type;
+    url.href = response.url;
+    url.innerHTML = response.url;
   })
   .catch((err) => console.error(err));
 
@@ -50,8 +50,10 @@ https://api.coindesk.com/v1/bpi/currentprice.json
 Let the fetch function go to the API every 5 seconds, get the currency exchange and append the important details to the html
 Do this inside a new file called currency.html
 
+
+**********HINT********** 🤔
+setInterval(function () {});
 */
 
-setInterval(function(){
 
-})
+
