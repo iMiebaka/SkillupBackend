@@ -2,6 +2,7 @@
 const baseUrl = "https://hacker-news.firebaseio.com/v0";
 // This url makes sure the result is returned in JSON
 const newStoriesUrl = `${baseUrl}/topstories.json`;
+// This url makes can be modified to get a particular new
 const itemUrl = `${baseUrl}/item/`;
 
 // This is a config object for the fetch function
@@ -31,5 +32,5 @@ fetch(itemUrl + "32494485" + ".json", options)
 /*
 Make an app that goes to 
 https://catfact.ninja/fact
-Let the fetch function go to the API every 5 seconds, get a fact and append it to p tag on the html
+Let the fetch function go to the API every 5 seconds, get a fact and append it to h1 tag on the html
 */ 
