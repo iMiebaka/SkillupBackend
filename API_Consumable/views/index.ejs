@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("./partials/head") %>
+</head>
+
+<body>
+    <%- include('./partials/header'); %>
+        <div class="container mx-auto ">
+            <p>
+                <%= name %>
+            </p>
+
+            <% people.map(element=> { %>
+                <p>
+                    <%= element %>
+                </p>
+                <% }); %>
+        </div>
+</body>
+
+</html>

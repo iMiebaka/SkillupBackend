@@ -1,0 +1,31 @@
+{
+  "name": "api_consumable",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node index.js -e ejs,js,html",
+    "tailwind": "npx tailwindcss -i ./static/css/input.css -o ./static/css/output.css --watch",
+    "clean": "rm -rf build && mkdir build",
+    "build-css": "node-sass static/css/output.css",
+    "build-server": "babel -d ./build ./server -s",
+    "build": "npm run clean && npm run build-css && npm run build-server"
+    },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.18.10",
+    "@babel/node": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "connect-livereload": "^0.6.1",
+    "livereload": "^0.9.3",
+    "nodemon": "^2.0.19"
+  }
+}
