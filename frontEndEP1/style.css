@@ -1,0 +1,24 @@
+.h1 {
+  color: gold;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+.search-input{
+    margin-left: 10px;
+}
+.header-navigation {
+  height: 72px;
+  background-color: white;
+}
+.site-name {
+  color: slategray;
+  font-weight: 600;
+  margin-left: 2px;
+}
+.site-icon {
+  width: 20px;
+}
