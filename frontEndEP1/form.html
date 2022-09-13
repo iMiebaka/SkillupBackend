@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="text" name="first-name">
+        <input type="text" name="second-name">
+
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        const form = document.querySelector("form")
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            console.log(e.target[0].value);
+            const ans = confirm("Do you want to delete")
+            console.log(ans);
+            {
+                ans &&
+                e.target[1].remove()
+            }
+            // const ans = alert("Do you want to delete")
+            // console.log(ans);
+        })
+
+    </script>
+</body>
+
+</html>
