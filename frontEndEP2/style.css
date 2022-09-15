@@ -1,0 +1,119 @@
+.h1 {
+  color: gold;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  position: relative;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  padding-right: 30px;
+  box-shadow: 0 1px 2px 2px rgb(224, 224, 224);
+}
+
+.header-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  margin-left: 10px;
+}
+.header-navigation {
+  height: 72px;
+  background-color: white;
+}
+.site-name {
+  color: slategray;
+  font-weight: 600;
+  margin-left: 2px;
+}
+.site-icon {
+  width: 20px;
+}
+
+.search-area {
+  width: 560px;
+  display: flex;
+  box-shadow: 0 1px 10px 2px rgb(233, 233, 233);
+  margin: 2px 15px;
+  height: 35px;
+  border-radius: 5px;
+  outline: 1px solid rgb(211, 211, 211);
+}
+.search-area button {
+  width: 10%;
+  background: none;
+  border: none;
+}
+
+.search-input {
+  border: none;
+  width: 90%;
+}
+.search-input:focus {
+  outline: none;
+}
+nav {
+  display: flex;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  text-decoration: none;
+  margin: 0 2px;
+  padding: 0px 10px;
+  padding-top: 10px;
+}
+
+.nav-items:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+.nav-items i {
+  font-size: 25px;
+  color: rgb(102, 102, 255);
+}
+
+.nav-items span {
+  font-size: 12px;
+  font-weight: 100;
+  color: rgb(83, 83, 83);
+}
+.profile-avatar {
+  background-color: rgb(83, 83, 83, 0.2);
+  border-radius: 100%;
+  padding: 10px;
+  width: 20px;
+}
+
+.nav-items-secondary {
+  display: flex;
+  align-items: center;
+  /* margin: 0 2px; */
+  /* padding-right: 30px; */
+  /* padding-top: 10px; */
+}
+
+.map-section {
+  position: relative;
+  height: 100vh;
+}
