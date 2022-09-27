@@ -18,6 +18,8 @@ liveReloadServer.server.once("connection", () => {
 
 app.use(connectLiveReload());
 
+
+
 app.get("/", (request, response, next) => {
   //   response.json("Welcome to my API");
   let people = ["geddy", "neil", "alex"];
