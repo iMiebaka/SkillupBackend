@@ -16,3 +16,6 @@ Step 3: Setup the POST route
 6. Create an objects variable to hold the parsed the data from No 5
 7. Add the payload created in No 3 to the object variable from the No 6
 8. Put the updated object in the history file
+
+Step 4: Create the delete
+Please complete it
