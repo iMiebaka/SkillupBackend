@@ -1,8 +1,1 @@
-[
-  {
-    "id": "4e8a66da-1c26-4a0f-ab36-939eeda7e58e",
-    "number1": 1,
-    "number2": 12,
-    "sum": 13
-  }
-]
+[{"id":"4e8a66da-1c26-4a0f-ab36-939eeda7e58e","number1":1,"number2":12,"sum":13},{"id":"ce2a8f05-6755-47f8-b017-b8616496e21c","date":"2022-09-28T13:50:25.335Z","number1":2,"number2":1,"sum":3},{"id":"6cdee6e1-2b43-4b16-a4f6-99e5ee4eb0b3","date":"2022-09-28T13:51:24.111Z","number1":2,"number2":1,"sum":3},{"id":"f189598a-c772-4c2b-a840-2caff3cbcd63","date":"2022-09-28T14:05:57.435Z","sum":null},{"id":"5ad04f2e-b5dd-4958-9567-138ec419985c","date":"2022-09-28T14:06:23.785Z","num1":2,"num2":1,"sum":3},{"id":"2b8fd95f-105b-4ac5-b47d-92e27eb9a583","date":"2022-09-28T14:10:32.370Z","sum":null}]
