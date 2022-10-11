@@ -38,7 +38,7 @@ router.post("/", (req, res, next) => {
             "message": "Data entered successfully",
         })
     }
-    catch (err) {
+    catch (err) { 
         res.send(400).json({ err })
     }
 })
