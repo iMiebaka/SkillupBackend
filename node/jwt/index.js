@@ -56,5 +56,3 @@ app.get("/protected", validate, (req, res) => {
 })
 
 app.listen(2000, () => console.log("App is running"))
-// const token = jwt.sign(user, "1234")
-// console.log(token);
