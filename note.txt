@@ -1,0 +1,7 @@
+* creating a database with mongoose
+* creating a collection of users 
+* creating a user 
+* getting all users
+* getting a single user
+* updating a user 
+* Deleing a user
