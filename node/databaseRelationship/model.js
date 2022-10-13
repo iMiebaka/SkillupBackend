@@ -13,29 +13,39 @@ const db = async () => {
 }
 db()
 
-// Child Schema
+// Parent Schema
 const PersonSchema = new mongoose.Schema({
     name: String,
-    age: Number
+    age: Number,
+    personDataSchema_id: {
+        type: mongoose.Schema.Types.ObjectId,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+        ref: "PersonalityData"
+    },
+    childrenSchema_id: [{
+        type: mongoose.Schema.Types.ObjectId,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+        ref: "Children"
+    }]
 })
 
 // Set the name of the collection and the Schema
 const Person = mongoose.model("Person", PersonSchema);
 
 
-// Parent Schema
+// Child Schema
 const PersonalityDataSchema = new mongoose.Schema({
     heart: String,
     relationship: String,
     nin: String, 
-    personSchema_id: {
-        type: mongoose.Schema.Types.ObjectId,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-        ref: "Person"
-    }
 })
 // Set the name of the collection and the Schema
 const PersonalityData = mongoose.model("PersonalityData", PersonalityDataSchema);
 
+const ChildrenSchema = new mongoose.Schema({
+    name: String,
+    age: Number,
+    toys: Number
+})
+const Children = mongoose.model("Children", ChildrenSchema);
 
 
-module.exports = {Person, PersonalityData}
+module.exports = {Person, PersonalityData, Children}
