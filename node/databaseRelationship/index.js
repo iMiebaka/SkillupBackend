@@ -69,7 +69,6 @@ app.put("/children", async (req, res) => {
 
         if(!person_id) throw new Error("Parent not found")
         if(!children) throw new Error("Child not found")
-        console.log(children);
         await Person.findByIdAndUpdate(person_id,
             { $push: { childrenSchema_id: children } }
         )
